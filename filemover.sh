@@ -10,12 +10,12 @@
 targetdirectory=$(/target_directory)
 sourcedirectory=$(/source_directory)
 
-if ! test -d "$targetdirectory" || "$sourcedirectory" 
+if [ ! -d "$target_directory" ] || [ ! -d "$sourcedirectory" ]
 then
 echo "directories are not found"
 exit 1
 
-if ! test -r "$targetdirectory" || "$sourcedirectory"
+if [ ! -r "$target_directory" ] || [ ! -r "$sourcedirectory" ]
 then
 echo "directories are not are not available"
 exit 1 
