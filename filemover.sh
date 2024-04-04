@@ -17,24 +17,24 @@
 
 echo "Введите расширение файлов, которые вы хотите скопировать (например, 
 txt):"
-read extension
+read file_extension
 
 
 echo "Введите путь каталога, в который вы хотите скопировать файлы:"
-read destination
+read target_directory
 
-files=$(find . -type f -name "*.$extension")
+files=$(find . -type f -name "*.$file_extension")
 
 if [ -z "$files" ];
 	 then
-  echo "Файлов с расширением .$extension не найдено."
+  echo "Файлов с расширением .$file_extension не найдено."
 	else
 
-  echo "Найденные файлы с расширением .$extension:"
+  echo "Найденные файлы с расширением .$file_extension:"
   echo "$files"
 
-  echo "Копирование файлов в $destination..."
-  cp $files "$destination"
+  echo "Копирование файлов в $target_destination..."
+  cp $files "$target_destination"
   echo "Копирование завершено."
 fi
 
