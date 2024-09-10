@@ -1,0 +1,12 @@
+3. Rami https://github.com/it-career-hub/git_team_work/issues/1
+3. Diana https://github.com/it-career-hub/git_team_work/issues/2
+3. Halyna https://github.com/it-career-hub/git_team_work/issues/3
+3. Serhei https://github.com/it-career-hub/git_team_work/issues/4
+
+#!/bin/bash
+# Запрос исходной и целевой директории у пользователя
+# Запрос расширения файлов, которые нужно скопировать
+# Проверка существования исходной директории
+# Проверка существования целевой директории
+# Проверка, есть ли файлы с указанным расширением в исходной директории
+# Копирование файлов с указанным расширением в целевую директорию
