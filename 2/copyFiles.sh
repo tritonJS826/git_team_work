@@ -12,4 +12,9 @@ if [ -z "$files_found" ]; then
 	exit 1
 fi
 
-
+#Копирование
+for file in $matching_files; do
+    cp "$file" "$target_directory"
+    echo "File copynig: $file"
+done
+    echo "Done."
