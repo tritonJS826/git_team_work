@@ -1,18 +1,15 @@
 #!/bin/bash
 
-#ЭТО КОД РАМИ
+#RAMI
 # Запрос исходной и целевой директории у пользователя
 read -p "Введите исходную директорию: " source_dir
 read -p "Введите целевую директорию: " target_dir
 
-#ТУТ БУДЕТ КОД ДИАНЫ
+#DIANA
 #Prompt the user to input the file extension. #2
 #Предложите пользователю ввести расширение файла. #2
 # Запрос расширения файлов, которые нужно скопировать
 read -p "Введите расширение файлов для копирования (например, txt): " extension
-
-
-#ТУТ БУДЕТ КОД ГАЛИНЫ
 
 #GALA
 #Check existence and accessibility of source and target directories #3
@@ -23,7 +20,6 @@ if [ ! -d "$source_dir" ]; then
     exit 1
 fi
 
-#Это КОД СЕРГЕЯ
 #Serhii
 #Check for files with the specified extension in the source directory #4
 #Проверьте наличие файлов с указанным расширением в исходном каталоге #4
