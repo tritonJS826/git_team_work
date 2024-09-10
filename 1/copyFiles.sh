@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ ! -d "$source_dir" ]; then
+    echo "Исходная директория не существует!"
+    exit 1
+fi
+
+
 files=$(ls "$source_dir"/*"$file_ext" 2>/dev/null)
 
 if [ -z "$files" ]; then
