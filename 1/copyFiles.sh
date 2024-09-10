@@ -9,3 +9,5 @@ else
     echo "$files"
 fi
 
+read -p "Введите расштрение файлов для копирования:" file_ext
+
