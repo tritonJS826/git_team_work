@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Тут біл Сергей, но я ничего не ломал, честно-честно
 
 read -p "Insert search directory: " dir_search
 read -p "Insert target directory: " dir_target
